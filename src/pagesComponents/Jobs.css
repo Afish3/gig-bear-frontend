@@ -1,0 +1,35 @@
+.Jobs{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(4px + 2vmin);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .Jobs-container {
+    opacity: .96;
+    z-index: 1;
+    position: relative;
+    overflow: scroll;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0 1rem 4rem 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .Jobs-title, 
+  .Jobs-lead {
+    color: black;
+  }
+
+  .Jobs-lead {
+    margin-bottom: 2rem;
+  }

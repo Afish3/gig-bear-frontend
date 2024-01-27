@@ -1,0 +1,55 @@
+  .Homepage{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: calc(10px + 2vmin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  .Homepage-container {
+    opacity: .96;
+    /* transition: opacity 1s ease-in-out; */
+    z-index: 1;
+    position: relative;
+    height: 55vh;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0 1.8rem 4rem 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .Homepage-container.logged-in {
+    height: 70vh;
+  }
+
+  .Homepage-title, 
+  .Homepage-lead {
+    color: black;
+  }
+
+  .Homepage-lead {
+    margin-bottom: 3rem;
+  }
+
+  .Google-logo {
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
