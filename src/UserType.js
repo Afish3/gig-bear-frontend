@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import backgroundVideo from '../public/videos/gigBearVid.mp4';
+import backgroundVideo from 'videos/gigBearVid.mp4';
 import './UserType.css';
 
 /** Site UserType */
