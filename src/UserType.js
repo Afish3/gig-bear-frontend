@@ -61,7 +61,6 @@ const UserType = ({ setType }) => {
         className="background-video"
         muted
         autoPlay
-        playsInline
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
