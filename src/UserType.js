@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-// import backgroundVideo from '/videos/gigBearVid.mp4';
+import backgroundVideo from './static/gigBearVid.mp4';
 import './UserType.css';
 
 /** Site UserType */
@@ -25,24 +25,22 @@ const UserType = ({ setType }) => {
   useEffect(() => {
     const video = document.getElementById('userType-background-video');
 
-    if (video) {
-      const handleVideoLoaded = () => {
-        // Start the video when the component mounts
-        video.play();
-        // Simulate a delay for 2 seconds before showing the content
-        const timer = setTimeout(() => {
-          setShowContent(true);
-        }, 2000);
+    const handleVideoLoaded = () => {
+      // Start the video when the component mounts
+      video.play();
+      // Simulate a delay for 2 seconds before showing the content
+      const timer = setTimeout(() => {
+        setShowContent(true);
+      }, 2000);
 
-        return () => clearTimeout(timer);
-      };
-  
-      video.addEventListener('loadedmetadata', handleVideoLoaded);
-  
-      return () => {
-        video.removeEventListener('loadedmetadata', handleVideoLoaded);
-      };
-    }
+      return () => clearTimeout(timer);
+    };
+
+    video.addEventListener('loadedmetadata', handleVideoLoaded);
+
+    return () => {
+      video.removeEventListener('loadedmetadata', handleVideoLoaded);
+    };
   }, [showContent]);
 
   const handleUser = () => {
@@ -63,7 +61,7 @@ const UserType = ({ setType }) => {
         autoPlay
         playsInline
       >
-        <source src="/videos/gigBearVid.mp4" type="video/mp4" />
+        <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
         <div className="UserType-container">
