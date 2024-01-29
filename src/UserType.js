@@ -3,7 +3,7 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import backgroundVideo from '/videos/gigBearVid.mp4';
+// import backgroundVideo from '/videos/gigBearVid.mp4';
 import './UserType.css';
 
 /** Site UserType */
@@ -63,7 +63,7 @@ const UserType = ({ setType }) => {
         autoPlay
         playsInline
       >
-        <source src={backgroundVideo} type="video/mp4" />
+        <source src="/videos/gigBearVid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
         <div className="UserType-container">
