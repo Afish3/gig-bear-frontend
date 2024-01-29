@@ -65,6 +65,7 @@ const UserType = ({ setType }) => {
         playsInline
       >
         <source src={videoSource} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
         <div className="UserType-container">
           <h1 className="UserType-title">Gig Bears</h1>
