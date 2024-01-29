@@ -25,12 +25,18 @@ const UserType = ({ setType }) => {
   useEffect(() => {
     const video = document.getElementById('userType-background-video');
 
+    console.log(video)
+    console.log("COMPONENT MOUNTED")
+
     if (video) {
       const handleVideoLoaded = () => {
         // Start the video when the component mounts
+      console.log("VIDEO ABOUT TO PLAY")
+
         video.play();
         // Simulate a delay for 2 seconds before showing the content
         const timer = setTimeout(() => {
+          console.log("TIMER")
           setShowContent(true);
         }, 2000);
 
@@ -61,6 +67,7 @@ const UserType = ({ setType }) => {
         className="background-video"
         muted
         autoPlay
+        playsInline
       >
         <source src={backgroundVideo} type="video/mp4" />
       </video>
